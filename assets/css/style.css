@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Phần style chung */
+
+.max-width{
+    max-width: 1300px;
+    padding: 20px 50px;
+    margin: 0px auto;
+}
+.max-width .title{
+    font-weight: 300;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.max-width .orange-bar{
+    width: 100px;
+    height: 2px;
+    background: orange;
+    margin-top: 30px;
+}
+
+/* Home Menu */
+
+.home-menu{
+    position: relative;
+    background-image: url("../images/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+    z-index: 1;
+}
+
+.home-menu::after{
+    content: '';
+    position: absolute;
+    width: 100%; 
+    height:100%;
+    top:0; 
+    left:0;
+    background:rgba(0,0,0,0.5);
+    opacity: 1;
+    z-index: -1;
+}
+
+nav{
+    margin: 0px 10%;
+}
+
+nav .max-width{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .max-width .logo img{
+    height: 80px;
+    width: 80px;
+}
+
+nav .max-width .menu{
+    display: flex;
+    justify-content: space-evenly;
+    height: 80px;
+    align-items: center;
+    width: 600px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+nav .max-width .menu li{
+    list-style: none;  
+    cursor: pointer;
+    transition: all 0.5s;
+    font-size: 19px;
+}
+
+nav .max-width .menu li:hover{
+    color: orange;
+}
+
+/* Content Menu */
+
+.home-menu .content-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    height: 500px;
+    width: 900px;
+    padding: 20px 50px;
+    margin: 0px 10%;
+}
+
+.home-menu .content-menu .text p{
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: 150;
+    line-height: 60px;
+    color: #fff;
+}
+
+.home-menu .content-menu .multi-button{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    width: 320px;
+    justify-content: space-between;
+}
+
+.home-menu .content-menu .multi-button button{
+    width: 150px;
+    height: 40px;
+    border: 1px solid orange;
+    border-radius: 30px;
+    font-size: 17px;
+    background: none;
+    cursor: pointer;
+}
+
+#btn-1{
+    color: #fff;
+    background-color: orange;
+}
+
+#btn-1:hover{
+    background-color: peru;
+}
+
+#btn-2{
+    color: orange;
+    background-color: none;
+}
+
+/* Home content */
+
+.home-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-content .max-width{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.home-content .max-width .about{
+    margin-top: 30px;
+}
+
+/* Box content */
+
+.home-content .content-boxes{
+    display: flex;
+    width: 1100px;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.content-boxes .content-box{
+    width: 250px;
+    height: fit-content;
+}
+
+.content-boxes .content-box i{
+    color: orange;
+    font-size: 50px;
+    line-height: 70px;
+}
+
+.content-boxes .content-box p{
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 350;
+}
+
+.content-boxes .content-box .title{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+/* Home Banner */
+
+.home-banner{
+    width: 100%;
+    margin-top: 30px;
+    padding: 30px 0px 0px 0px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home-banner .banner-image{
+    width: 25%;
+    height: 100%;
+
+}
+
+.home-banner .banner-image img{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* ADS */
+
+.ads{
+    background-color: rgb(235, 235, 235);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ads .max-width{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.ads .ads-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0px 100px 0px;
+    width: 1200px;
+}
+
+.ads .ads-content .phone{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.ads .ads-content .how-to-use{
+    width: 50%;
+}
+
+.ads .ads-content .phone img{
+    width: 200px;
+    margin-right: 40px;
+}
+
+
+.ads .ads-content .how-to-use .text{
+    display: flex;
+    align-items: center;
+    width: 450px;
+    margin-left: 40px;
+}
+
+.ads .ads-content .how-to-use .text p{
+    padding: 16px 0px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.ads .ads-content .how-to-use .text i{
+    color: orange;
+    margin-right: 16px;
+    font-size: 35px;
+}
+
+.ads .ads-content .how-to-use .download{
+    display: flex;
+    align-items: center;
+    width: 450px;
+    margin-left: 40px;
+    margin-top: 35px;
+}
+
+.ads .ads-content .how-to-use .download img{
+    width: 180px;
+    margin-right: 15px;
+}
+
+/* Cities */
+.cities{
+
+}
+
+.cities .max-width{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.cities .container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.cities .container .row{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.cities .container .row .col{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 18%;
+}
+
+.cities .container .row .col img{
+    width: 100%;
+}
+
+.cities .container .row .col .info{
+    display: flex;
+    padding: 4px 0px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.cities .container .row .col h4{
+    font-weight: 300;
+    font-size: 18px;
+    padding: 8px 0px;
+    letter-spacing: 1px;
+}
+
+.cities .container .row .col .info i {
+    margin-left: 7px;
+    margin-right: 10px;
+    color: orange;
+}
+
+.cities .container .row .col .info .twitter{
+    text-decoration: underline;
+    color: orange;
+}
+
+.cities .container .row .col .info .twitter:hover{
+    color: rgb(212, 143, 14);
+}
